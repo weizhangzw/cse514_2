@@ -5,7 +5,7 @@ To run the models, enter data.py.
 
 every model is below print('--------------------------------------------------------------------------------------')
 
-and every dimension reduction methods is above that.
+and every dimension reduction method is above print line.
 
 the models are KNN, Decision Tree, Random Forest, SVM, ANN, AdaBoost and Ridge
 
