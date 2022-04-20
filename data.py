@@ -14,7 +14,7 @@ from sklearn.feature_selection import SelectFromModel
 from sklearn.decomposition import NMF
 from sklearn.decomposition import FastICA 
 
-
+# chang files below to test different pairs
 X = np.loadtxt('a_c.data', dtype='int', delimiter=',', usecols=range(1, 16))
 y = np.loadtxt('a_c.data', dtype='str', delimiter=',', usecols=[0])
 
