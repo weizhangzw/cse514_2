@@ -34,7 +34,7 @@ fold_num = 5
 
 
 # dimension reduction
-# pca_model = PCA(n_components=2,svd_solver='full',random_state=30,whiten=False,tol=0.5)
+# pca_model = PCA(n_components=4,svd_solver='full',random_state=30,whiten=False,tol=0.5)
 # pca_model.fit(X_train)
 # X_train = pca_model.transform(X_train)
 # X_val = pca_model.transform(X_val)
@@ -60,14 +60,14 @@ fold_num = 5
 # plt.plot(k_range, k_scores)
 # plt.xlabel('Value of K for KNN')
 # plt.ylabel('Accuracy')
-# plt.title('Cross validation result of KNN(H,K)')
+# plt.title('Cross validation result of KNN(A,C)')
 # plt.show()
 # end = time.time()
 # print(end-start)
 
 
 # dimension reduction
-# pca_model = PCA(n_components=2,svd_solver='full',random_state=30,whiten=False,tol=0.5)
+# pca_model = PCA(n_components=4,svd_solver='full',random_state=30,whiten=False,tol=0.5)
 # pca_model.fit(X_train)
 # X_train = pca_model.transform(X_train)
 # X_val = pca_model.transform(X_val)
@@ -89,11 +89,11 @@ fold_num = 5
 #         acc += accuracy(df, X_test_fold, y_test_fold)
 #     acc /= fold_num
 #     k_scores.append(acc)
-# Plot accuracy
+
 # plt.plot(k_range, k_scores)
 # plt.xlabel('Value of max_depth')
 # plt.ylabel('Accuracy')
-# plt.title('Cross validation result of Decision Tree(H,K)')
+# plt.title('Cross validation result of Decision Tree(A,C)')
 # plt.show()
 # ed = time.time()
 # print(ed-st)
@@ -101,7 +101,7 @@ fold_num = 5
 
 # dimension reduction
 # nmf = make_pipeline(StandardScaler(), NMF(n_components=3))
-# nmf_model = NMF(n_components=3,init='nndsvdar',solver='mu',max_iter=150,alpha=0.02)
+# nmf_model = NMF(n_components=4,init='nndsvdar',solver='mu',max_iter=150,alpha=0.02)
 # nmf_model.fit(X_train)
 # X_train = nmf_model.transform(X_train)
 # X_val = nmf_model.transform(X_val)
@@ -135,7 +135,7 @@ fold_num = 5
 
 # dimension reduction
 # fa = make_pipeline(StandardScaler(), FastICA(n_components=3))
-# fa_model = FastICA(n_components=3,algorithm='parallel',max_iter=150,random_state=30,whiten=True)
+# fa_model = FastICA(n_components=4,algorithm='parallel',max_iter=150,random_state=30,whiten=True)
 # fa_model.fit(X_train)
 # X_train = fa_model.transform(X_train)
 # X_val = fa_model.transform(X_val)
@@ -168,7 +168,7 @@ fold_num = 5
 
 
 # from sklearn.decomposition import SparsePCA
-# spca_model = SparsePCA(n_components=2,random_state=30,tol=0.5)
+# spca_model = SparsePCA(n_components=4,random_state=30,tol=0.5)
 # spca_model.fit(X_train)
 # X_train = spca_model.transform(X_train)
 # X_val = spca_model.transform(X_val)
@@ -271,6 +271,4 @@ fold_num = 5
 # plt.ylabel('Accuracy')
 # plt.title('Cross validation result of Ridge Classifier(H,K)')
 # plt.show()
-
-
 
